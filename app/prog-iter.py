@@ -1,7 +1,7 @@
 import datetime
 fecha = datetime.datetime.now()
 
-print ('Hoy', 'es',fecha.strftime('%d/%m/%Y'))
+print ('Hoy es:',fecha.strftime('%d/%m/%Y'))
 
 import socket
 host = socket.gethostname()

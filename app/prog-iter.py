@@ -10,5 +10,8 @@ print('Mi nombre de host es %s' %host)
 
 print ("voy a Iterar 10 veces")
 for i in range(10):
-    print ("Iteracion:",i)
-print ("fin")
+   print ("Iteracion:",i)
+
+print ("FIN")
+
+exit()

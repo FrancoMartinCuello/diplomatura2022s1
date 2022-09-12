@@ -5,4 +5,4 @@ COPY app/* .
 
 CMD ["prog-iter.py"]
 
-ENTRYPOINT ["python"]
+ENTRYPOINT ["python3"]

@@ -1,0 +1,20 @@
+---
+- name: programPlaybook
+  hosts:
+    - local
+  become: False
+  gather_facts: True
+  vars:
+    host: "{{ ansible_hostname | upper }}"
+  tasks:
+    - name: Prepare host
+      dnf: name=docker-ce state=latest
+
+    - name: pull docker image
+      docker_container:
+        name: programContainer
+        image: francomartin/diplomatura2022s1:1.0
+        state: started
+      register: command_output
+    - debug:
+        var: command_output
